@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../logo.svg';
-import { purple, social, elevation } from '../utilities';
+import { purple, social, elevation, fixed, serif } from '../utilities';
 
 const Header = ({ className }) => (
   <header className={className}>
     <img src={logo} className="logo" alt="logo" />
+    Hello
   </header>
 );
 
@@ -24,8 +25,11 @@ const Header = ({ className }) => (
 export default styled(Header)`
   background: ${purple};
   padding: 10px 5%;
+  ${fixed({ yProp: 'top' })};
   ${elevation[1]};
+  ${serif};
   transition: 0.3s;
+  width: 100%;
   &:hover {
     background: ${social.facebook};
   }

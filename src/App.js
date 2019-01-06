@@ -32,6 +32,9 @@ class App extends Component {
     return (
       <Fragment>
         <Header />
+        <Button>Hello</Button>
+        <Button size="small">Hello</Button>
+        <CancelButton>Don't say Hello</CancelButton>
         <GlobalStyle />
       </Fragment>
     );
