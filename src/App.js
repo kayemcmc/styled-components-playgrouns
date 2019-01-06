@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
 import logo from './logo.svg';
-import './App.css';
+import GlobalStyle from './Global';
 
 //FUNCTION FOR BREAKPOINTS
 const size = {
@@ -108,6 +108,7 @@ class App extends Component {
           <DoubleFake />
           <Fake />
         </header>
+        <GlobalStyle />
       </AppWrapper>
     );
   }
