@@ -35,7 +35,7 @@ class App extends Component {
         <Card>
           <h2>hello card</h2>
           <Card.Button size="small" modifiers="alert">
-            Hello
+            New updated button
           </Card.Button>
         </Card>
         <Button modifiers="alert">Hello</Button>
