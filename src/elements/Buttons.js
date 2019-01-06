@@ -17,7 +17,11 @@ export const Button = styled.button`
       padding: 3px 10px;
       `;
     }
-  }}
+  }};
+  transition: 0.3s ease box-shadow;
+  &:hover {
+    ${elevation[3]};
+  }
 `;
 
 export const CancelButton = styled(Button)`
