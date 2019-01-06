@@ -56,6 +56,10 @@ html {
           transform: rotate(360deg);
         }
       }
+      main {
+        width: 90%;
+        margin: 0 auto;
+      }
       
 `;
 

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import GlobalStyle from './Global';
-import { Heading, Button, CancelButton } from './elements';
+import { Heading, Button, CancelButton, Card } from './elements';
 import Header from './layouts/Header';
 
 // const Fake = ({ className }) => (
@@ -30,13 +30,19 @@ import Header from './layouts/Header';
 class App extends Component {
   render() {
     return (
-      <Fragment>
+      <main>
         <Header />
-        <Button>Hello</Button>
+        <Card>
+          <h2>hello card</h2>
+          <Card.Button size="small" modifiers="alert">
+            Hello
+          </Card.Button>
+        </Card>
+        <Button modifiers="alert">Hello</Button>
         <Button size="small">Hello</Button>
-        <CancelButton>Don't say Hello</CancelButton>
+        <CancelButton modifiers={['medium', 'alert']}>Don't say Hello</CancelButton>
         <GlobalStyle />
-      </Fragment>
+      </main>
     );
   }
 }
