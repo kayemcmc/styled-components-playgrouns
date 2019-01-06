@@ -1,7 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
+import { normalize } from 'polished';
 
 //mainly use it for browser resettin
 const GlobalStyle = createGlobalStyle`
+${normalize()};
 html {
   box-sizing: border-box;
 }

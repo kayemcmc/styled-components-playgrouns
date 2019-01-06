@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { teal, elevation } from '../utilities';
+import { lighten } from 'polished';
 
 export const Button = styled.button`
   padding: ${props => (props.type === 'cancel' ? '10px 5px' : '20px 10px')};
@@ -20,6 +21,7 @@ export const Button = styled.button`
   }};
   transition: 0.3s ease box-shadow;
   &:hover {
+    background: ${lighten(0.1, teal)};
     ${elevation[3]};
   }
 `;
