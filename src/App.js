@@ -9,14 +9,14 @@ const size = {
   med: 960,
   large: 1140
 };
-// const above = Object.keys(size).reduce((acc, label) => {
-//   acc[label] = (...args) => css`
-//     @media (min-width: ${size[label]}px) {
-//       ${css(...args)}
-//     }
-//   `;
-//   return acc;
-// }, {});
+const aboveTwo = Object.keys(size).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (min-width: ${size[label]}px) {
+      ${css(...args)}
+    }
+  `;
+  return acc;
+}, {});
 
 const above = Object.keys(size).reduce((acc, label) => {
   acc[label] = (...args) => css`
